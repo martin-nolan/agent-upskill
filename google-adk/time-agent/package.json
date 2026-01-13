@@ -2,13 +2,13 @@
   "name": "google-adk-agents",
   "version": "1.0.0",
   "description": "Agent Development Kit TypeScript project",
-  "main": "agent.ts",
+  "main": "time-agent.ts",
   "scripts": {
-    "start": "ts-node agent.ts",
+    "start": "ts-node time-agent.ts",
     "build": "tsc",
-    "dev": "ts-node-dev agent.ts",
-    "web": "@google/adk-devtools web",
-    "cli": "@google/adk-devtools run agent.ts"
+    "dev": "ts-node-dev time-agent.ts",
+    "web": "npx @google/adk-devtools web",
+    "cli": "npx @google/adk-devtools run time-agent.ts"
   },
   "keywords": [
     "agent",
@@ -19,10 +19,10 @@
   "license": "ISC",
   "dependencies": {
     "@google/adk": "^0.2.2",
-    "@google/adk-devtools": "^0.2.2",
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@google/adk-devtools": "^0.2.2",
     "@types/node": "^20.12.7",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
