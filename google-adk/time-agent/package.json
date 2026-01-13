@@ -1,0 +1,31 @@
+{
+  "name": "google-adk-agents",
+  "version": "1.0.0",
+  "description": "Agent Development Kit TypeScript project",
+  "main": "agent.ts",
+  "scripts": {
+    "start": "ts-node agent.ts",
+    "build": "tsc",
+    "dev": "ts-node-dev agent.ts",
+    "web": "@google/adk-devtools web",
+    "cli": "@google/adk-devtools run agent.ts"
+  },
+  "keywords": [
+    "agent",
+    "adk",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/adk": "^0.2.2",
+    "@google/adk-devtools": "^0.2.2",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
