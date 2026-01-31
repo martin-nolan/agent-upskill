@@ -1,95 +1,52 @@
 # Agent Upskill
 
-A collection of agent development examples using different frameworks and SDKs.
+A structured learning repo for agent-first engineering, focused on Google ADK and enterprise-ready agent systems.
 
-## Projects
+## Start here
 
-### 1. Google ADK Agent
-Location: [`google-adk/`](google-adk/)
+- Roadmap: `docs/00-roadmap.md`
+- Repo map: `docs/repo-map.md`
+- Example README template: `docs/templates/example-readme-template.md`
 
-Google Agent Development Kit (ADK) example with TypeScript.
+## Learning path
 
-**Tech Stack:**
-- TypeScript
-- Google ADK (`@google/adk`)
-- Gemini 2.5 Flash model
+Follow the docs in numeric order:
 
-**Quick Start:**
-```bash
-cd google-adk/time-agent
-npm install
-npm run cli  # Run CLI interface
-npm run web  # Run web interface
+```
+docs/00-roadmap.md
+docs/01-adk-basics.md
+docs/02-workflows.md
+docs/03-multi-agent-teams.md
+docs/04-evaluation.md
+docs/05-deployment.md
+docs/06-observability.md
+docs/07-safety-governance.md
+docs/08-patterns-library.md
 ```
 
-### 2. Microsoft Azure SDK Agent
-Location: [`microsoft-azure-sdk-agent/`](microsoft-azure-sdk-agent/)
+## Current projects
 
-Azure Agent Framework example in Python.
+- `google-adk/` — Google ADK examples (TypeScript)
+- `microsoft-azure-sdk-agent/` — Azure Agent Framework placeholder (later phase)
 
-**Tech Stack:**
-- Python
-- Azure Agent Framework
-- Azure OpenAI
-- uv (package manager)
+## Target structure (as the repo evolves)
 
-**Quick Start:**
-
-```bash
-cd microsoft-azure-sdk-agent
-uv pip install agent-framework --pre python-dotenv
-uv run agent.py "What time is it in Tokyo?"
+```
+/blueprints
+/deployment
+/docs
+/enterprise
+/google-adk
+/google-adk-python
+/integrations
+/langgraph-examples
+/orchestration
+/crewai-examples
+/azure-agent-framework-examples
+/specialist-agents
+/dev
 ```
 
-## Current Features
+## Progress tracking
 
-Both projects currently demonstrate:
-- **Function/Tool Calling** - Structured tool definitions and execution
-- **Custom Tool Implementation** - Building domain-specific tools
-- **Environment-based Configuration** - Secure API key management
-- **Basic Agent Setup** - Simple LLM agent initialization
-
-## Learning Goals
-
-Planned concepts to explore across both frameworks:
-
-### Orchestration & Multi-Agent Patterns
-- **Orchestration Patterns** - Sequential, parallel, loop, and routing workflows
-- **Multi-agent Handoff** - Specialist agents with dynamic delegation
-- **Agent Composition** - Building complex systems from simple agents
-
-### State & Memory Management
-- **Session State** - Temporary scratchpad data for conversations
-- **Cross-session Memory** - Persistent knowledge stores and RAG patterns
-- **Context Windows** - Managing long-running conversations
-
-### Real-time & Streaming
-- **Token Streaming** - Real-time response generation
-- **Tool Event Streaming** - Intermediate tool result updates
-- **Bidirectional Streaming** - Live voice-like interactions
-
-### Observability & Evaluation
-- **OpenTelemetry Tracing** - Distributed tracing for agent workflows
-- **Cost & Latency Monitoring** - Track LLM usage and performance
-- **Evaluation Frameworks** - Test datasets, trajectory scoring, output quality
-- **Regression Testing** - Automated agent behavior validation
-
-### Production & Deployment
-- **Deployment Targets** - Vertex Agent Engine (Google), Azure hosting patterns
-- **Scalability Patterns** - Load balancing, rate limiting, caching
-- **Error Handling** - Retry logic, fallbacks, graceful degradation
-
-## Prerequisites
-
-- Node.js 20.12.7 or later
-- npm 9.2.0 or later
-- Python 3.8 or later (for Python examples)
-- uv (for Python package management)
-
-## Configuration
-
-Each project requires API keys to be configured in their respective `.env` files. See individual project READMEs for details.
-
----
-
-Primary learning path: **Google ADK first, then replicate patterns in Azure Agent Framework.**
+Use the checklists in `docs/00-roadmap.md` to track progress phase by phase.
